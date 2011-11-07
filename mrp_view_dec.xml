@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        
+    <record id="mrp_workcenter_view_dec" model="ir.ui.view">
+      <field name="name">mrp.workcenter.form_dec</field>
+      <field name="model">mrp.workcenter</field>
+      <field name="type">form</field>
+      <field name="inherit_id" ref="mrp.mrp_workcenter_view" />
+      <field name="arch" type="xml">
+		<field name="time_cycle" position="replace">
+		    <field name="time_cycle" />
+        </field>
+		<field name="time_start" position="replace">
+		    <field name="time_start" />
+        </field>
+        
+		<field name="time_stop" position="replace">
+		    <field name="time_stop" />
+        </field>
+                        
+        
+      </field>
+    </record>    
+    
+    
+        <record id="mrp_routing_workcenter_form_view_dec" model="ir.ui.view">
+      <field name="name">mrp.routing.workcenter.form_dec</field>
+      <field name="model">mrp.routing.workcenter</field>
+      <field name="type">form</field>
+      <field name="inherit_id" ref="mrp.mrp_routing_workcenter_form_view" />
+      <field name="arch" type="xml">
+		<field name="hour_nbr" position="replace">
+		    <field name="hour_nbr" />
+        </field>
+                      
+        
+      </field>
+    </record>    
+    
+    
+    
+    
+        </data>
+</openerp>
+    
