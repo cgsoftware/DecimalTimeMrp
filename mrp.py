@@ -9,6 +9,7 @@ import decimal_precision as dp
 
 
 class mrp_workcenter(osv.osv):
+    # mmoooo
     _inherit = 'mrp.workcenter'
     _columns = {
                 'time_cycle': fields.float('Time for 1 cycle (hour)', help="Time in hours for doing one cycle.", digits_compute=dp.get_precision('Mrp Qty')),
